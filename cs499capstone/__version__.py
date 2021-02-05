@@ -1,0 +1,7 @@
+__version__ = "0.1.0"
+__title__ = "cs499capstone"
+__description__ = "None yet!"
+__url__ = ""
+__author__ = "Gregory Danielson"
+__author_email__ = "gregdan3@uab.edu"
+__copyright__ = "None"

@@ -1,0 +1,6 @@
+psql:
+  host: '164.111.161.173'
+  port: 5432
+  username: 'team5'
+  password: '5team5'
+  database: 'team5'

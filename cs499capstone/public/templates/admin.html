@@ -1,0 +1,51 @@
+<!doctype html>
+{% extends "base.html" %}
+<html>
+    <head>
+    </head>
+    <body>
+    {% block content %}
+
+    <style>
+        body {
+          background-image: url('static/img/adminbackground.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        img {
+          width: 40%;
+          height: 40%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+      </div>
+
+      <img src="static/img/HouseLayout.png" alt="House Layout">
+
+      <div class="<%= 'LightOnState' if @status == 'success' %>">
+        <p>Light(s) are on in the house!</p>
+        <img src="static/img/Light_On.jpg" class="LightOnState" alt="Light On" style="width:30%">
+      </div>
+
+      <div class="<%= 'LightOffState' if @status == 'success' %>">
+        <p>Lights are off.</p>
+        <img src="static/img/Light_Off.jpg" class="LightOffState" alt="Light Off" style="width:30%">
+      </div>
+
+      <div class="<%= 'DoorOpenState' if @status == 'success' %>">
+        <p>Door(s) are open in the house!</p>
+        <img src="static/img/Door_Open.jpg" class="DoorOpenState" alt="Door Open" style="width:30%">
+      </div>
+
+      <div class="<%= 'DoorClosedState' if @status == 'success' %>">
+        <p>Doors are closed.</p>
+        <img src="static/img/Door_Closed.jpg" class="DoorClosedState" alt="Door Closed" style="width:30%">
+      </div>
+
+    {% endblock content %}
+    </body>
+</html>
+
